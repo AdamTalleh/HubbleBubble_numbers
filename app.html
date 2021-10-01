@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>A coding project by Adam Talleh</title>
+    <title>HubbleBubble_Numbers</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,11 +12,13 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gemunu+Libre:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gemunu+Libre:wght@300&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="css/site.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- Convert this to an external style sheet -->
 
 </head>
@@ -55,111 +57,172 @@
     </nav>
     <!-- ==Main section=====-->
     <main class="flex-shrink-0 bg">
-        <div class="container">
-
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-4 border-end border-4">
+                    <h1 class="fw-bold">HubbleBubble_Numbers</h1>
+                    <h4 class="lead">
+                        Live life one loop at a time. a javascript exercise using loops.Write a program that displays the numbers from 0 to 100 .Display the even numbers in <strong>Bold</strong>
+    
+                    </h4>
+                    <h2 class="fw-bold mt-5 border-bottom border-2">Instructions</h2>
+                    <p>Enter a starting value and an ending value.Press the button and the values will appear</p>
+    
+    
+                </div>
+                <div class="col col-lg-8">
+                    <div>
+                        <h5>Enter Values</h5>
+                        <form class="row gy-2 gx-3">
+                            <div class="col">
+                                <input id="hubbleValue" type="number" class="form-control" placeholder="hubble Value" Value="" min=0
+                                aria-label="Hubble Value">
+                              
+                            </div>
+                            <div class="col">
+                                <input id="bubbleValue" type="number" class="form-control" placeholder="bubble Value" Value="" max=100
+                                aria-label="Bubble Value">
+    
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Go Ahead</button>
+    
+                            </div>
+    
+                        </form>
+                        <h2 class=" fw-bold mt-5 border-bottom border-2">Results</h2>
+                        <div class="table-responsive">
+                            <table class="table table-stripped table-sm">
+                                <tbody id="results">
+                                    <!--Results go here-->
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+                
+    
         </div>
     </main>
 
     <!-- ==Footer section=====-->
     <footer class="site-footer">
-        
+
         <div class="container">
-           
-            
-       <section class="section-subscribe">
-       
-            <div class="row justify-content-center align items-center">
-                <div class ="col-md-12 mb-4">
-                    <h1 class="heading text-white">
-                        Get news &amp; updates
-                    </h1>
+
+
+            <section class="section-subscribe">
+
+                <div class="row justify-content-center align items-center">
+                    <div class="col-md-12 mb-4">
+                        <h1 class="heading text-white">
+                            Get news &amp; updates
+                        </h1>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="" methods="POST">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <input type="text" class="form-control" placeholder="Your name here">
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <input type="email" class="form-control" placeholder="Your email here">
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <input type="submit" class="btn btn-secondary w-100" placeholder="Subs">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-12">
-                    <form action="" methods="POST">
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <input type="text" class="form-control" placeholder="Your name here">
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <input type="email" class="form-control" placeholder="Your email here">
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <input type="submit" class="btn btn-secondary w-100" placeholder="Subs">
-                            </div>
+
+            </section>
+            <div class="row mb-5">
+                <div class="col-md-3 mb-5">
+                    <h2>About us</h2>
+                    <p>I'm Adam Talleh a software engineer</p>
+                    <p><a href="#">Click here To learn more</a></p>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <h2>Contact &amp; Address</h2>
+                    <ul class="list-unstyled footer-link">
+                        <li class="d-flex">
+                            <span class="me-3">Address:</span>
+                            <span class="text-white"> Via Giovanni Giolitti ,325,Rome,Italy</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="me-3">Telephone:</span>
+                            <span class="text-white"> +39-3279-060716</span>
+                        </li>
+                        <li class="d-flex mt-4">
+                            <span class="me-3">Email:</span>
+                            <span class="text-white"> eng.adam17@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <h2>Quick Links</h2>
+                    <ul class="list-unstyled footer-link">
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">My blog</a></li>
+                        <li><a href="#">Opinions</a></li>
+                        <li><a href="#">About Me </a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <h2>Social media</h2>
+                        <ul class="list-unstyled footer-link d-flex footer-social">
+                            <li><a href="#"><span class="fa fa-github "></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin "></i></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter "></span></a></li>
+                            <li><a href="#"><span class="fa fa-youtube "></span></a></li>
+                            <li><a href="#"><span class="fa fa-facebook "></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 justify-content-end align-content-end ">
+
+                            <img src="img/twitter_profile_image.png" alt="AT logo" height="120" width="120">
+
+
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-md-center text-left">
+                        <p class="text-white">copyrights reserved &copy;2021</p>
+                    </div>
+
                 </div>
             </div>
-        
-       </section>
-       <div class="row mb-5">
-           <div class="col-md-3 mb-5">
-               <h2>About us</h2>
-               <p>I'm Adam Talleh a software engineer</p>
-               <p><a href="#">Click here To learn more</a></p>
-           </div>
-           <div class="col-md-3 mb-5">
-               <h2>Contact &amp; Address</h2>
-               <ul class="list-unstyled footer-link">
-                   <li class="d-flex">
-                       <span class="me-3">Address:</span>
-                       <span class="text-white"> Via Giovanni Giolitti ,325,Rome,Italy</span>
-                   </li>
-                   <li class="d-flex">
-                       <span class="me-3">Telephone:</span>
-                       <span class="text-white"> +39-3279-060716</span>
-                   </li>
-                   <li class="d-flex mt-4">
-                       <span class="me-3">Email:</span>
-                       <span class="text-white"> eng.adam17@gmail.com</span>
-                   </li>
-               </ul>
-           </div>
-           <div class="col-md-3 mb-5">
-               <h2>Quick Links</h2>
-               <ul class="list-unstyled footer-link">
-                   <li><a href="#">Projects</a></li>
-                   <li><a href="#">My blog</a></li>
-                   <li><a href="#">Opinions</a></li>
-                   <li><a href="#">About Me </a></li>
-                   <li><a href="#">Contact Me</a></li>
-               </ul>
-           </div>
-   
-           <div class="col-md-3">
-               <div class="row">
-               <h2>Social media</h2>
-               <ul class="list-unstyled footer-link d-flex footer-social">
-                   <li><a href="#"><span class="fa fa-github "></span></a></li>
-                   <li><a href="#"><span class="fa fa-linkedin " ></i></span></a></li>
-                   <li><a href="#"><span class="fa fa-twitter "></span></a></li>
-                   <li><a href="#"><span class="fa fa-youtube "></span></a></li>
-                   <li><a href="#"><span class="fa fa-facebook "></span></a></li>
-               </ul>
-               </div>
-               <div class="row">
-                   <div class="col-md-3 justify-content-end align-content-end ">
-               
-               <img src="img/twitter_profile_image.png" alt="AT logo" height="120" width="120" >
-                   
-             
-                    </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-12 text-md-center text-left">
-                   <p class="text-white">copyrights reserved &copy;2021</p>
-               </div>
-               
-           </div>
-       </div>
-   
-   
-   </div>
-   
-   
-   </footer>
-    
+
+
+        </div>
+
+
+    </footer>
+
+    <template id="hbTemplate">
+        <tr >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+
 
     <!-- <footer class="footer mt-auto py-3  ">
     <div class="container-fluid ">
@@ -188,6 +251,9 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click",getValues)
+    </script>
 </body>
 
 </html>
