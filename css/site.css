@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #1d5888;
+    --secondary-color: #ff993b;
+    --dark-color: #292929;
+    --white-color: #e7e7e7;
+
+
+}
+
+body {
+    
+
+    color: var(--dark-color);
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.bg{
+    background-image: url("/img/blurry-gradient-haikei.svg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+nav {
+    background-color: var(--dark-color);
+
+}
+
+footer {
+    background-color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+
+
+footer .social>a {
+    color: var(--white-color);
+    opacity: 0.75;
+}
+
+footer .social>a:hover {
+    opacity: 0.9;
+    color: var(--secondary-color);
+
+}
+
+.bsicon {
+    color: purple;
+}
+
+.jsicon {
+    color: rgb(226, 211, 4)
+}
+
+.html5icon {
+    color: orangered;
+}
+
+.css3icon {
+    color: rgb(11, 82, 214)
+}
+main .icons >a:hover{
+    
+    opacity: 0.5;
+}
+
+.checklist>li i {
+    color: var(--secondary-color)
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 8rem;
+}
+
+/* .sticky-nav { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+} /*
+
+/* footer section*/
+.section-subscribe {
+    padding: 5em 0;
+}
+
+.form-control {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0.2) !important;
+    box-shadow: 0 3px q0px -2px rgb(0, 0, 0.2) !important;
+
+}
+
+.form-control:focus,
+.form-control:active {
+    outline: none;
+}
+
+.btn {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0.2) !important;
+    box-shadow: 0 3px q0px -2px rgb(0, 0, 0.2) !important;
+
+}
+
+.btn.btn-secondary {
+    color: #fff;
+    border-width: 2px;
+    background-color: #1d5888;
+    padding: 10px;
+
+}
+
+.site-footer {
+    padding: 0;
+
+    font-size: 14px;
+    color: #1d5888;
+
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.site-footer {
+
+    border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+    color: #ffc107;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-footer h2 {
+    font: size 22px;
+    margin-bottom: 28px;
+    letter-spacing: .05em;
+    color: #fff;
+}
+
+.site-footer .footer-link li {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    line-height: 0;
+    border-radius: 50%;
+    margin: 0 5px 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-social a:hover {
+    background-color: #ffc107;
+    border-color: #fff;
+    color: #000
+}
+
+.footer-social .fa {
+    margin-top: 8px;
+}
