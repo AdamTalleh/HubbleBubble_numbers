@@ -69,6 +69,19 @@ footer .social>a:hover {
 .css3icon {
     color: rgb(11, 82, 214)
 }
+
+.Hubble{
+    color: darkgreen;
+}
+
+.Bubble{
+    color: darkblue;
+}
+
+.HubbleBubble{
+    color: red;
+    font-weight: bold;
+}
 main .icons >a:hover{
     
     opacity: 0.5;

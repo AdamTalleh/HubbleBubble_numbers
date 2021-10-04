@@ -21,7 +21,7 @@ function getValues() {
         //we call hubblebubble 
 
 
-        let hbArray = hubbleBubble(hubbleValue, bubbleValue);
+        let hbArray = hubbleBubble3(hubbleValue, bubbleValue);
 
         //display data and write values to the screen
 
@@ -83,7 +83,50 @@ function hubbleBubble(hubbleValue, bubbleValue) {
 
 }
 
+function hubbleBubble2(hubbleValue,bubbleValue){
+    let returnArray =[];
+    let Hubble = false;
+    let Bubble = false;
 
+    for (let i = 1; i<=100 ; i++){
+        Hubble =i% hubbleValue ==0;
+        Bubble = i% bubbleValue ==0;
+        switch(true){
+            case Hubble && Bubble:{
+                returnArray.push('HubbleBubble');
+                break;
+            
+            }
+            case Hubble:{
+                returnArray.push('Hubble');
+                break;
+
+            }
+            case Bubble:{
+                returnArray.push('Bubble');
+                break;
+            }
+            default : {
+                returnArray.push(i);
+                break;
+            }
+
+
+        }
+    } 
+    return returnArray;
+}
+
+function hubbleBubble3(hubbleValue,bubbleValue){
+    let returnArray=[];
+    for (let i = 0; i <= 100; i++) {
+        let value =((i% hubbleValue ==0 ? 'Hubble' : '')+ (i% bubbleValue == 0 ? 'Bubble':'')|| i);
+        returnArray.push(value);
+        
+    }
+    return returnArray;
+
+}
 //loop over the array and create a tablerow
 function displayData(hbArray) {
 
@@ -103,12 +146,23 @@ function displayData(hbArray) {
         //grab just the tds to put into array
 
         let rowCols = tableRow.querySelectorAll("td");
+        rowCols[0].classList.add(hbArray[index]);
+        
         rowCols[0].textContent = hbArray[index];
+        
+        rowCols[1].classList.add(hbArray[index +1]);
         rowCols[1].textContent = hbArray[index + 1];
-
+       
+        rowCols[2].classList.add(hbArray[index +2]);
         rowCols[2].textContent = hbArray[index + 2];
+        
+        rowCols[3].classList.add(hbArray[index +3]);
         rowCols[3].textContent = hbArray[index + 3];
+        
+        
+        rowCols[4].classList.add(hbArray[index +4]);
         rowCols[4].textContent = hbArray[index + 4];
+
 
         tableBody.appendChild(tableRow);
 
